@@ -16,7 +16,13 @@
     <description>Bank platform - Spring Cloud microservices, Kafka, Spring AI</description>
 
     <modules>
+        <module>config-service</module>
+        <module>discovery-service</module>
+        <module>gateway-service</module>
         <module>account-service</module>
+        <module>transaction-service</module>
+        <module>audit-service</module>
+        <module>chatbot-service</module>
     </modules>
 
     <properties>
