@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.UUID;
 
 
-@FeignClient(name = "account-service", url = "${ACCOUNT_SERVICE_URL:http://localhost:8081}", path = "/api/accounts",
+@FeignClient(name = "account-service", url = "${ACCOUNT_SERVICE_URL:}", path = "/api/accounts",
         fallbackFactory = AccountRestClientFallbackFactory.class)
 public interface AccountRestClient {
 
